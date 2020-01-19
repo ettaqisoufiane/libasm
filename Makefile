@@ -26,7 +26,7 @@ compile:
 	@nasm -f macho64 ft_write.s
 
 $(NAME): compile
-	@ar rc $(NAME) $(objects)
+	@ar rc $(NAME) *.o
 	@ranlib $(NAME)
 
 clean:
