@@ -28,6 +28,7 @@ Loop:
 		inc		rsi
 		jmp		Loop
 cmp1:
-		sub		al, bl
-		movsx	rax, al
+		movzx		rbx, bl
+		movzx		rax, al
+		sub		rax, rbx
 		ret

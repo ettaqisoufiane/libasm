@@ -28,7 +28,7 @@ copychar:
 		inc		rbx
 		jmp		copychar
 finishstrcpy:
-		mov		byte [rdx + 1], 0
+		mov		byte [rdx], 0
 		mov		rax, rdi
 		pop		rbx
 		pop		rdx
